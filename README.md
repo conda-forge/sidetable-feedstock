@@ -5,7 +5,7 @@ Home: https://github.com/chris1610/sidetable
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: sidetable builds simple but useful summary tables of your data
 
