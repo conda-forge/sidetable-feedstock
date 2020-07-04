@@ -2,17 +2,17 @@
 {% set version = "0.6.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 3c1a972cb548220c035d5b6366dbb677164ae580e05a26dbc5ed7cd263d4ff00
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -30,12 +30,12 @@ test:
     - seaborn
 
 about:
-  home: "https://github.com/chris1610/sidetable"
+  home: https://github.com/chris1610/sidetable
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "sidetable builds simple but useful summary tables of your data"
+  summary: sidetable builds simple but useful summary tables of your data
 
 extra:
   recipe-maintainers:
-    - chris1610 
+    - chris1610
