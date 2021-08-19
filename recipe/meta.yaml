@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - pandas >=1.0
-    - python
+    - python >=3.6
 
 test:
   imports:
@@ -34,7 +34,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: sidetable builds simple but useful summary tables of your data
+  summary: sidetable builds simple but useful summary tables of your pandas data
 
 extra:
   recipe-maintainers:
