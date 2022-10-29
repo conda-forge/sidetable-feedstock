@@ -1,5 +1,5 @@
 {% set name = "sidetable" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 06e5551d38391f38b90dbe18a4d8354308cab42180364a1ebdc90ba8b754da23
+  sha256: 363d90e4ec0e83699ad34e4d688806e1156e9ebbe6a1d229ab5d44c8229c8a9d
 
 build:
   noarch: python
